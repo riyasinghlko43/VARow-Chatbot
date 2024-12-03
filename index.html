@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARow</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="chatbot-toggler">
+        
+        
+    </button>
+    <div class="chatbot-popup">
+        <div class="chat-header">
+            <div class="header-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
+                    <path d="..."></path>
+                </svg>
+                <h2 class="logo-text">VARow</h2>
+            </div>
+            <button class="material-symbols-rounded" aria-label="Minimize chat">
+                keyboard_arrow_down
+            </button>
+        </div>
+
+        <div class="chat-body">
+            <div class="message bot-message">
+                <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024">
+                    <path d="..."></path>
+                </svg>
+                <div class="message-text">Hey there 👋🏻<br/>How can I help you today?</div>
+            </div>
+        </div>
+
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea name="message" placeholder="Type your message..." class="message-input"></textarea>
+                <div class="chat-controls">
+                    <button type="button" id="emoji-picker" class="material-symbols-rounded" aria-label="Add emoji">
+                        sentiment_satisfied
+                    </button>
+                    <div class="file-upload-wrapper">
+                        <input type="file" accept="image/*" id="file-input" hidden>
+                        <img src="#" alt="File preview" />
+                        <button type="button" id="file-upload" class="material-symbols-rounded" aria-label="Attach file">
+                            attach_file
+                        </button>
+                        <button type="button" id="file-cancel" class="material-symbols-rounded" aria-label="Cancel file">
+                            close
+                        </button>
+                        <button id="emoji-picker" class="emoji-button"></button>
+                    </div>
+                    <button type="submit" id="send-message" class="material-symbols-rounded" aria-label="Send message">
+                        <!-- Removed arrow_upward icon -->
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
